@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { ServicesComponent } from './services/services.component';
 import { FormComponent } from './form/form.component';
 import { QuoteBoxComponent } from './quote-box/quote-box.component';
+import { HiglightDirective } from './higlight.directive';
+import { TimeConsumePipe } from './time-consume.pipe';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServicesComponent,
     FormComponent,
-    QuoteBoxComponent
+    QuoteBoxComponent,
+    HiglightDirective,
+    TimeConsumePipe,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
