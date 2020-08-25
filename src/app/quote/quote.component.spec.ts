@@ -1,3 +1,4 @@
+
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { QuoteComponent } from './quote.component';
@@ -23,3 +24,4 @@ describe('QuoteComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

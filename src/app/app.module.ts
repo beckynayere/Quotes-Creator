@@ -1,24 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServicesComponent } from './services/services.component';
-import { FormComponent } from './form/form.component';
-import { QuoteBoxComponent } from './quote-box/quote-box.component';
-import { HiglightDirective } from './higlight.directive';
-import { TimeConsumePipe } from './time-consume.pipe';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { HighlightDirective } from './higlight.directive';
+import { TimeConsumePipe } from './time-consume.pipe';
+import { QuoteComponent } from './quote/quote.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServicesComponent,
-    FormComponent,
-    QuoteBoxComponent,
-    HiglightDirective,
-    TimeConsumePipe,
-    QuoteFormComponent
+    QuoteComponent,
+    QuoteFormComponent,
+    QuoteDetailComponent,
+    HighlightDirective,
+    TimeConsumePipe
+    
   ],
   imports: [
     BrowserModule,
@@ -28,5 +29,6 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
 
 
