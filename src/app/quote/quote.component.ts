@@ -13,7 +13,7 @@
 //   }
 
 // }
-// export class QuoteComponent {
+ //export class QuoteComponent {
 //   showDescription: boolean;
 //   constructor(
 //     public id: number,
@@ -38,11 +38,11 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1, 'In every angel a devil hides', 'C.S.Lewis', 0, 0, new Date(2019, 6, 9), 'Samora'),
+    new Quote(1, 'Do not let your happiness depend on something you may lose.', 'C.S.Lewis', 0, 0, new Date(2019, 6, 9), 'Sanaipei'),
     // tslint:disable-next-line: max-line-length
-    new Quote(2, 'Some of us think holding on makes us strong; but sometimes it is letting go', 'Herman Hesse', 0, 1, new Date(2020, 11, 28), 'Cobbs'),
+    new Quote(2, 'Some of us think holding on makes us strong; but sometimes it is letting go.', 'Hnnah Hermes', 0, 1, new Date(2020, 11, 28), 'Messi'),
     // tslint:disable-next-line: max-line-length
-    new Quote(3, 'If you avoid the conflict to keep the peace you start a war inside yourself', 'Paulo Kehlo', 0, 5, new Date(2020, 7, 22), 'Cohell')
+    new Quote(3, 'If you avoid the conflict to keep the peace you start a war inside yourself', 'Albert Einsten', 0, 5, new Date(2020, 7, 22), 'Martineli')
   ];
 
   constructor() { }
@@ -86,3 +86,4 @@ export class QuoteComponent implements OnInit {
     return Math.max.apply(Math, this.quotes.map((quote) => quote.upVote));
   }
 }
+
