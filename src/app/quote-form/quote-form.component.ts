@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//import {NgForm} from '@angular/forms';
+import {Quote} from '../quote'
 
 @Component({
   selector: 'app-quote-form',
