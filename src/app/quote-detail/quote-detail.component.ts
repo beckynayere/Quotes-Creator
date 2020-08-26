@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 
@@ -11,7 +9,6 @@ import { Quote } from '../quote';
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote: Quote;
-  @Output() deleteQuote: EventEmitter<Quote> = new EventEmitter();
   @Output() upVoteQuote: EventEmitter<Quote> = new EventEmitter();
   @Output() downVoteQuote: EventEmitter<Quote> = new EventEmitter();
 
@@ -27,10 +24,5 @@ export class QuoteDetailComponent implements OnInit {
   // tslint:disable-next-line: typedef
   downVote(quote) {
     this.downVoteQuote.emit(quote);
-  }
-
-  // tslint:disable-next-line: typedef
-  onDelete(quote) {
-    this.deleteQuote.emit(quote);
   }
 }
